@@ -6,7 +6,6 @@
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always",
     "source.organizeImports.eslint": "always"
