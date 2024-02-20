@@ -2,10 +2,21 @@
   "name": "jest-badges",
   "version": "1.0.0",
   "description": "An evolution of library jest-coverage-badges, adding lots of options and improvements",
-  "main": "dist/cli.js",
-  "bin": "dist/cli.js",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
   "scripts": {
-    "lint": "eslint . --fix"
+    "dev": "nodemon --watch src --ext ts --exec \"ts-node src\"",
+    "test": "jest --passWithNoTests --runInBand --detectOpenHandles --silent --noStackTrace",
+    "test:v": "jest --passWithNoTests --runInBand --detectOpenHandles --verbose",
+    "test:w": "npm run test -- --watch",
+    "test:u": "npm run test -- -c jest.unit.config.ts",
+    "test:i": "npm run test -- -c jest.integration.config.ts",
+    "test:ci": "npm run test -- --coverage",
+    "test:ci:u": "npm run test:u -- --coverage",
+    "test:ci:i": "npm run test:i -- --coverage",
+    "test:staged": "npm test -- --findRelatedTests",
+    "lint": "eslint . --fix",
+    "compile": "esbuild src --outfile=dist/index.js --bundle --minify --platform=node --tree-shaking=true"
   },
   "keywords": [],
   "author": {
@@ -28,6 +39,7 @@
     "jest-environment-node": "29.7.0",
     "lefthook": "1.6.1",
     "lint-staged": "15.2.2",
+    "nodemon": "3.0.3",
     "supertest": "6.3.4",
     "ts-jest": "29.1.2",
     "ts-node": "10.9.2",
