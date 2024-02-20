@@ -1,0 +1,40 @@
+{
+  "name": "jest-badges",
+  "version": "1.0.0",
+  "description": "An evolution of library jest-coverage-badges, adding lots of options and improvements",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": {
+    "email": "leandroluk@gmail.com",
+    "name": "Leandro S. Gomes",
+    "url": "https://www.linkedin.com/in/leandroluk/"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "18.6.1",
+    "@commitlint/config-conventional": "18.6.2",
+    "@types/node": "20.8.2",
+    "commitlint": "18.6.1",
+    "cz-conventional-changelog": "3.3.0",
+    "dotenv": "16.4.5",
+    "gts": "^5.2.0",
+    "lefthook": "1.6.1",
+    "lint-staged": "15.2.2",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "~5.2.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
