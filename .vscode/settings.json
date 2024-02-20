@@ -7,8 +7,8 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always",
-    "source.organizeImports.eslint": "always"
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
   },
   "editor.rulers": [
     80,
@@ -29,7 +29,7 @@
   "jestrunner.runOptions": [
     "--testTimeout=999999"
   ],
-    // javascript
+  // javascript
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
   "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
