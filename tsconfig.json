@@ -2,6 +2,8 @@
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "rootDir": ".",
+    "outDir": "dist",
+    "module": "CommonJS",
     // changes
     "esModuleInterop": true,
     "resolveJsonModule": true,
