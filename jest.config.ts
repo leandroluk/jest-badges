@@ -9,6 +9,7 @@ const config: Config.InitialOptions = {
   testEnvironment: 'node',
   testMatch: ['**/*.spec.ts', '**/*.test.ts'],
   testPathIgnorePatterns: ['/node_modules/'],
+  coverageReporters: ['json-summary', 'text', 'lcov'],
   moduleNameMapper: {
     '[$]/(.*)': '<rootDir>/src/$1',
     'tests/(.*)': '<rootDir>/tests/$1',
