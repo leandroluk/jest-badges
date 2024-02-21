@@ -33,7 +33,8 @@
   "settings": {
     "node": {
       "allowModules": [
-        "@jest/types"
+        "@jest/types",
+        "rimraf"
       ]
     }
   }
